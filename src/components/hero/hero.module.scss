@@ -1,0 +1,23 @@
+@import "src/vars";
+.hero {
+  width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  position: relative;
+  background: $primaryShadeLight;
+  color: #fff;
+}
+
+.center {
+  position: absolute;
+  top: 40vh;
+  left: 50vw;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  text-align: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 2rem;
+}

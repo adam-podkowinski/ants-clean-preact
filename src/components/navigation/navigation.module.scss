@@ -1,0 +1,23 @@
+@import "src/vars.scss";
+
+.navigation {
+  display: flex;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 7rem;
+  background: $primaryShadeLight;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+}

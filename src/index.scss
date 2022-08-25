@@ -10,4 +10,24 @@ body {
   font-family: 'Rubik', sans-serif;
   background-color: $background;
   color: $darkText;
+  overflow-x: hidden;
+
+  @keyframes fadeIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 20%;
+    }
+
+    to {
+      transform: none;
+      opacity: 100%;
+    }
+  }
+  animation: fadeIn .6s ease-in-out;
+}
+
+html {
+  @media(max-width: 762px) {
+    font-size: 80%;
+  }
 }
