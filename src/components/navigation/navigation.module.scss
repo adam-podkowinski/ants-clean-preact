@@ -3,7 +3,7 @@
 .scrolled {
   position: fixed;
   top: 0;
-  background: $primaryShadeLight;
+  background: $primaryShade;
 }
 
 .navWrapper {
@@ -32,7 +32,7 @@
   height: $navHeight;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 6rem;
+  padding-inline: 5rem;
   color: #fff;
   font-weight: 500;
   font-size: 1.5rem;
@@ -40,7 +40,7 @@
   z-index: 1;
 
   @media(max-width: $mobile) {
-    padding-inline: 3rem;
+    padding-inline: $sectionPaddingInlineSmall;
   }
 
   a {

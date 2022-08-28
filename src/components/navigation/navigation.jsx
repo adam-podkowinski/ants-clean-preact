@@ -25,7 +25,7 @@ const Navigation = () => {
         </a>
       </li>
       <li>
-        <a href="#" onclick={closeMenu}>
+        <a href={"#pricing"} onclick={closeMenu}>
           Cennik
         </a>
       </li>

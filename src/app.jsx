@@ -18,16 +18,6 @@ export function App() {
         <Contact />
         <Footer />
       </main>
-      <p style={{ height: "10rem" }}> LOL </p>
-      <p style={{ height: "10rem" }}> LOL </p>
-      <p style={{ height: "10rem" }}> LOL </p>
-      <p style={{ height: "10rem" }}> LOL </p>
-      <p style={{ height: "10rem" }}> LOL </p>
-      <p style={{ height: "10rem" }}> LOL </p>
-      <p style={{ height: "10rem" }}> LOL </p>
-      <p style={{ height: "10rem" }}> LOL </p>
-      <p style={{ height: "10rem" }}> LOL </p>
-      <p style={{ height: "10rem" }}> LOL </p>
     </div>
   );
 }
