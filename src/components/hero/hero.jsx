@@ -5,10 +5,7 @@ const Hero = () => {
     <div class={classes.hero}>
       <div class={classes.center}>
         <h1>ANTS CLEAN</h1>
-        <p>
-          Działalność gospodarcza zajmująca się wykonywaniem różnorakich prac
-          ogrodowych.
-        </p>
+        <p>Zaopiekuje się twoim ogrodem. 🌱 🏡</p>
         <div class={classes.buttonBox}>
           <button>Zadzwoń</button>
           <button>Cennik</button>
