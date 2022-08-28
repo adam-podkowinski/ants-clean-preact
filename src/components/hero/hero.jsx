@@ -1,4 +1,5 @@
 import classes from "./hero.module.scss";
+import { CgPhone, CgTag } from "react-icons/cg";
 
 const Hero = () => {
   return (
@@ -7,8 +8,12 @@ const Hero = () => {
         <h1>ANTS CLEAN</h1>
         <p>Zaopiekuje się twoim ogrodem. 🌱 🏡</p>
         <div class={classes.buttonBox}>
-          <a href={"#"}>Zadzwoń</a>
-          <a href={"#"}>Cennik</a>
+          <a href={"#"}>
+            <CgPhone /> Zadzwoń
+          </a>
+          <a href={"#"}>
+            <CgTag /> Cennik
+          </a>
         </div>
       </div>
     </div>

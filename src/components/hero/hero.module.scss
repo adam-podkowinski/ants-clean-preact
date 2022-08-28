@@ -10,7 +10,7 @@
   p, button, h1 {
     @keyframes slideIn {
       from {
-        transform: translateY(30%);
+        transform: translateY(40%);
       }
 
       to {
@@ -25,6 +25,8 @@
 .center {
   position: absolute;
   top: 40vh;
+  width: 100%;
+  padding: 2.5rem;
   left: 50vw;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -32,6 +34,7 @@
   h1 {
     font-size: 5rem;
     margin-bottom: .8rem;
+    line-height: .95;
     background: linear-gradient(to right, $primary, #c6eccd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,7 +51,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
+    @media(max-width: $mobile) {
+      flex-flow: column;
+    }
   }
 
   a {
@@ -56,13 +62,20 @@
     border: none;
     padding: 1.2rem 3rem;
     border-radius: 2rem;
-    display: block;
+    display: flex;
     text-decoration: none;
     color: $darkText;
     font-weight: 500;
     cursor: pointer;
     transition: background-color .3s, transform .25s ease-out, border-color .3s;
     font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    @media(max-width: $mobile) {
+      width: 100%;
+    }
 
     &:hover {
       background-color: $primaryTint;
@@ -74,7 +87,7 @@
     }
 
     &:nth-of-type(2) {
-      background-color: transparent;
+      background-color: transparentize($primaryShade, .8);
       color: #fff;
       border: 2px solid $primaryTint;
 

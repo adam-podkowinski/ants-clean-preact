@@ -20,9 +20,17 @@ button {
   }
 }
 
+ul  {
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
   @media(max-width: 500px) {
-    font-size: 85%;
+    font-size: 90%;
+  }
+
+  @media(max-width: 300px) {
+    font-size: 80%;
   }
 }

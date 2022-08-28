@@ -4,21 +4,25 @@
   position: fixed;
   top: 0;
   background: $primaryShadeLight;
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 100%;
-    }
-  }
-
-  animation: fadeIn .3s;
 }
 
 .navWrapper {
   height: $navHeight;
+}
+
+.mobileSwitch {
+  display: none;
+  z-index: 3;
+  background: none;
+  border:none;
+  color: #fff;
+  font-size: 2.8rem;
+  text-align: center;
+  align-items: center;
+
+  @media (max-width: $mobile) {
+    display: flex;
+  }
 }
 
 .navigation {
@@ -31,11 +35,10 @@
   color: #fff;
   font-weight: 500;
   font-size: 1.5rem;
+  transition: background-color .3s;
 
-  @media(max-width: 762px) {
-    padding-inline: 1rem;
-    justify-content: space-evenly;
-    font-size: 1.4rem;
+  @media(max-width: $mobile) {
+    padding-inline: 3rem;
   }
 
   a {
@@ -62,5 +65,36 @@
     list-style: none;
     display: flex;
     gap: 2.5rem;
+    @media(max-width: $mobile) {
+      a {
+        font-size: 2rem;
+      }
+      visibility: hidden;
+      opacity: 0;
+      position: fixed;
+      pointer-events: none;
+      transition: opacity .4s, visibility .4s, transform .4s;
+      background: transparentize($primaryShade, .02);
+      transform: translateX(100%);
+      top: 0;
+      left: 0;
+      z-index: 3;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+    }
+  }
+
+  .open {
+    @media(max-width: $mobile) {
+      opacity: 100%;
+      visibility: visible;
+      transform: translateX(0);
+      pointer-events: auto;
+    }
   }
 }
