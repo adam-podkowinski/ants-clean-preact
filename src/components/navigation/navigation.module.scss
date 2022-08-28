@@ -38,6 +38,26 @@
     font-size: 1.4rem;
   }
 
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fff;
+    padding-bottom: 2px;
+    line-height: 1.1;
+    background-image: linear-gradient($primaryTinter, $primaryTinter);
+    background-position: bottom left;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    transition: background-position 0s .3s, color .3s, background-size .3s;
+
+    &:hover, &:active {
+      color: $primaryTinter;
+      background-position: bottom right;
+      background-size: 100% 2px;
+    }
+  }
+
   ul {
     list-style: none;
     display: flex;

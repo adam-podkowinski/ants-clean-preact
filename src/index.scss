@@ -15,10 +15,14 @@ body {
 
 button {
   font-family: inherit;
+  &:focus {
+    outline: none;
+  }
 }
 
 html {
-  @media(max-width: 400px) {
+  scroll-behavior: smooth;
+  @media(max-width: 500px) {
     font-size: 85%;
   }
 }

@@ -7,8 +7,8 @@ const Hero = () => {
         <h1>ANTS CLEAN</h1>
         <p>Zaopiekuje się twoim ogrodem. 🌱 🏡</p>
         <div class={classes.buttonBox}>
-          <button>Zadzwoń</button>
-          <button>Cennik</button>
+          <a href={"#"}>Zadzwoń</a>
+          <a href={"#"}>Cennik</a>
         </div>
       </div>
     </div>

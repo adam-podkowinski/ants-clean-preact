@@ -16,14 +16,20 @@ const Navigation = () => {
 
   return (
     <div class={classes.navWrapper}>
-      <div class={navClasses}>
-        <div>Logo</div>
+      <nav class={navClasses}>
+        <a href={"#"}>Logo</a>
         <ul>
-          <li>O nas</li>
-          <li>Cennik</li>
-          <li>Kontakt</li>
+          <li>
+            <a href="#">O nas</a>
+          </li>
+          <li>
+            <a href="#">Cennik</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
         </ul>
-      </div>
+      </nav>
     </div>
   );
 };
