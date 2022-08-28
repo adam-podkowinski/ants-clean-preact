@@ -12,6 +12,7 @@
 
 .mobileSwitch {
   display: none;
+  cursor: pointer;
   z-index: 3;
   background: none;
   border:none;
@@ -36,6 +37,7 @@
   font-weight: 500;
   font-size: 1.5rem;
   transition: background-color .3s;
+  z-index: 1;
 
   @media(max-width: $mobile) {
     padding-inline: 3rem;

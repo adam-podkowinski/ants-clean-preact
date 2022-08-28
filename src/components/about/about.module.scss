@@ -1,0 +1,24 @@
+@import "src/vars";
+
+.about {
+
+}
+
+.images {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.image {
+  background: red;
+  width: 100%;
+  height: 10rem;
+  outline: 1px solid green;
+}

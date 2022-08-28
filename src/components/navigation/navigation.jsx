@@ -20,7 +20,7 @@ const Navigation = () => {
   const navItems = (
     <ul class={open && classes.open}>
       <li>
-        <a href="#" onclick={closeMenu}>
+        <a href={"#about"} onclick={closeMenu}>
           O nas
         </a>
       </li>

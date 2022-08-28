@@ -34,3 +34,12 @@ html {
     font-size: 80%;
   }
 }
+
+.container {
+  padding-inline: 10rem;
+  padding-block: 6rem;
+
+  @media(max-width: 1100px) {
+    padding-inline: 5rem;
+  }
+}
