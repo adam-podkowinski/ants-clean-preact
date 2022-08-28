@@ -4,8 +4,15 @@ const Hero = () => {
   return (
     <div class={classes.hero}>
       <div class={classes.center}>
-        <div>Ants Clean</div>
-        <div>Here an image</div>
+        <h1>ANTS CLEAN</h1>
+        <p>
+          Działalność gospodarcza zajmująca się wykonywaniem różnorakich prac
+          ogrodowych.
+        </p>
+        <div class={classes.buttonBox}>
+          <button>Zadzwoń</button>
+          <button>Cennik</button>
+        </div>
       </div>
     </div>
   );

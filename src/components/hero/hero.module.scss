@@ -1,10 +1,10 @@
-@import "src/vars";
+@import "src/vars.scss";
+
 .hero {
-  width: 100vw;
-  height: 90vh;
+  width: 100%;
+  height: calc(100vh - #{$navHeight});
   justify-content: center;
   position: relative;
-  background: $primaryShadeLight;
   color: #fff;
 }
 
@@ -12,12 +12,61 @@
   position: absolute;
   top: 40vh;
   left: 50vw;
-  width: 100%;
   transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-columns: 3fr 2fr;
   text-align: center;
-  justify-content: space-between;
-  font-weight: bold;
-  font-size: 2rem;
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: .8rem;
+    letter-spacing: .2rem;
+    background: linear-gradient(to right, $primary, #c6eccd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    font-size: 1.5rem;
+    letter-spacing: .5px;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+  }
+
+  .buttonBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  button {
+    background: $primary;
+    border: none;
+    padding: 1.2rem 3rem;
+    border-radius: 2rem;
+    display: block;
+    color: $darkText;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .3s;
+    font-size: 1.3rem;
+
+    &:hover {
+      background-color: $primaryTint;
+    }
+
+    &:first-of-type {
+      box-shadow: 0 10px 30px -10px $primaryTint;
+    }
+
+    &:nth-of-type(2) {
+      background-color: transparent;
+      color: #fff;
+      border: 2px solid $primary;
+
+      &:hover {
+        background-color: #40c057;
+        color: $darkText;
+      }
+    }
+  }
 }

@@ -1,23 +1,46 @@
 @import "src/vars.scss";
 
+.scrolled {
+  position: fixed;
+  top: 0;
+  background: $primaryShadeLight;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 100%;
+    }
+  }
+
+  animation: fadeIn .3s;
+}
+
+.navWrapper {
+  height: $navHeight;
+}
+
 .navigation {
   display: flex;
-  width: 100vw;
-  position: sticky;
-  top: 0;
-  height: 10vh;
-  z-index: 1;
+  width: 100%;
+  height: $navHeight;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 7rem;
-  background: $primaryShadeLight;
+  padding-inline: 6rem;
   color: #fff;
   font-weight: 500;
   font-size: 1.5rem;
 
+  @media(max-width: 762px) {
+    padding-inline: 1rem;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+  }
+
   ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }
