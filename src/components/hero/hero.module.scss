@@ -57,6 +57,22 @@
     }
   }
 
+  .main-button {
+    box-shadow: 0 10px 30px -10px $primaryTint;
+  }
+
+  .secondary-button {
+    background-color: transparentize($primaryShade, .8);
+    color: #fff;
+    border: 2px solid $primaryTint;
+
+    &:hover {
+      background-color: $accent;
+      border-color: $accent;
+      color: $darkText;
+    }
+  }
+
   a {
     background: $primary;
     border: none;
@@ -77,25 +93,13 @@
       width: 100%;
     }
 
-    &:hover {
+    &:hover, &:active {
       background-color: $primaryTint;
       transform: translateY(-8%);
     }
 
-    &:first-of-type {
-      box-shadow: 0 10px 30px -10px $primaryTint;
-    }
-
-    &:nth-of-type(2) {
-      background-color: transparentize($primaryShade, .8);
-      color: #fff;
-      border: 2px solid $primaryTint;
-
-      &:hover {
-        background-color: $accent;
-        border-color: $accent;
-        color: $darkText;
-      }
+    &:focus {
+      outline: none;
     }
   }
 }
