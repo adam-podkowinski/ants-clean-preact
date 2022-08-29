@@ -59,10 +59,15 @@
 
   .main-button {
     box-shadow: 0 10px 30px -10px $primaryTint;
+    border: 3px solid $primary;
+
+    &:hover, &:active{
+      border-color: $primaryTint;
+    }
   }
 
   .secondary-button {
-    background-color: transparentize($primaryShade, .8);
+    background-color: transparentize($primaryShade, .75);
     color: #fff;
     border: 3px solid $primaryTint;
 
