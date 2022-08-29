@@ -2,12 +2,48 @@
 
 .about {
   background-color: $primaryShade;
+  color: #fff;
 
-  p {
-    color: #fff;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    font-size: 1.3rem;
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 3rem;
+    justify-items: left;
+    @media(max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .feature-box {
+    font-size: 1.8rem;
+    color: $primaryTinter;
+    font-weight: 500;
+    letter-spacing: .5px;
+    display: flex;
+    flex-flow: column;
+    gap: 1.2rem;
+
+    @media(max-width: 1000px) {
+      font-size: 1.5rem;
+    }
+
+    @media(max-width: $mobile) {
+      font-size: 1.39rem;
+      flex-flow: row;
+      align-items: center;
+    }
+
+    span {
+      color: darken($accent, 10);
+      font-weight: 700;
+    }
+
+    .feature-icon {
+      margin-right: .5rem;
+      color: darken($accent, 10);
+      display: block;
+    }
   }
 }
 

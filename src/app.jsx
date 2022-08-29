@@ -9,7 +9,7 @@ import Footer from "@/components/footer/footer";
 export function App() {
   return (
     <div class={classes.app}>
-      <div class={classes.background} />
+      <div class={classes.background} aria-label={"Piękny ogród w Szczecin"} />
       <Navigation />
       <main>
         <Hero />

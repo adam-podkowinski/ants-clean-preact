@@ -15,7 +15,7 @@
   cursor: pointer;
   z-index: 3;
   background: none;
-  border:none;
+  border: none;
   color: #fff;
   font-size: 2.8rem;
   text-align: center;
@@ -55,6 +55,13 @@
     background-size: 0 2px;
     background-repeat: no-repeat;
     transition: background-position 0s .3s, color .3s, background-size .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: calc(#{$navHeight} - 1vh);
+    }
 
     &:hover, &:active {
       color: $primaryTinter;
