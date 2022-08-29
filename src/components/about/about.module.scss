@@ -22,14 +22,14 @@
     letter-spacing: .5px;
     display: flex;
     flex-flow: column;
-    gap: 1.2rem;
+    gap: .9rem;
 
     @media(max-width: 1000px) {
       font-size: 1.5rem;
     }
 
     @media(max-width: $mobile) {
-      font-size: 1.39rem;
+      font-size: 1.4rem;
       flex-flow: row;
       align-items: center;
     }
@@ -40,7 +40,6 @@
     }
 
     .feature-icon {
-      margin-right: .5rem;
       color: darken($accent, 10);
       display: block;
     }
