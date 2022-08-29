@@ -8,7 +8,7 @@ const Hero = () => {
         <h1>ANTS CLEAN</h1>
         <p>Zaopiekuje się twoim ogrodem. 🌱 🏡</p>
         <div class={classes.buttonBox}>
-          <a href={"tel:123456789"} class={classes.mainButton}>
+          <a href={"tel:+48534103127"} class={classes.mainButton}>
             <CgPhone /> Zadzwoń
           </a>
           <a href={"#pricing"} class={classes.secondaryButton}>

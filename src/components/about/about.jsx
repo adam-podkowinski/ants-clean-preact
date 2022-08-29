@@ -1,6 +1,6 @@
 import classes from "./about.module.scss";
 import ScrollAnimation from "react-animate-on-scroll";
-import { FaClock, FaCheck, FaStar, FaSkull } from "react-icons/fa";
+import { FaCalendarWeek, FaCheck, FaShieldAlt, FaStar } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -20,10 +20,14 @@ const About = () => {
         </h1>
         <p class={"section-p"}>
           Ants Clean działa na terenie Szczecina i wykonuje wszelkiego rodzaju
-          prace ogrodowe. Pawlow lol. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Esse in ipsum magni nihil officia, omnis placeat
-          porro vitae? Blanditiis culpa debitis ducimus eum incidunt natus
-          placeat quas quod ullam voluptates!
+          prace ogrodowe. Aby zobaczyć rezultaty naszych prac zapraszamy na{" "}
+          <a href="https://instagram.com/ants.clean" target={"blank"}>
+            Instagrama
+          </a>
+          . Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, amet
+          eaque et fugiat inventore maiores officia quidem repellat tenetur
+          voluptatibus. Alias amet ipsa minima porro quam, reiciendis rem
+          voluptas voluptatibus?
         </p>
         <ScrollAnimation
           animateIn={"fadeInUp"}
@@ -45,17 +49,15 @@ const About = () => {
               </p>
             </div>
             <div class={classes.featureBox}>
-              <FaClock class={classes.featureIcon} />
+              <FaCalendarWeek class={classes.featureIcon} />
               <p>
-                <span>Szybka</span> robota
+                Działamy <span>7 dni</span> w tygodniu
               </p>
             </div>
             <div class={classes.featureBox}>
-              <div class={classes.featureIcon}>
-                <FaSkull />
-              </div>
+              <FaShieldAlt class={classes.featureIcon} />
               <p>
-                <span>Zadowoleni</span> pracownicy
+                <span>100%</span> higieny i ostrożności
               </p>
             </div>
           </div>

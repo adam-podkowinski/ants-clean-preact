@@ -4,6 +4,10 @@
   background-color: $primaryShade;
   color: #fff;
 
+  a:hover, a:active {
+    color: $primaryTinter;
+  }
+
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,7 +33,7 @@
     }
 
     @media(max-width: $mobile) {
-      font-size: 1.4rem;
+      font-size: 1.39rem;
       flex-flow: row;
       align-items: center;
     }

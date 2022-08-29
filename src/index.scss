@@ -36,6 +36,11 @@ html {
   }
 }
 
+a {
+  text-decoration: underline;
+  color: $accent;
+}
+
 .container {
   padding-inline: $sectionPaddingInline;
   padding-block: $sectionPaddingBlock;
