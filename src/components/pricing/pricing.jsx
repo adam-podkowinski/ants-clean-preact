@@ -8,7 +8,7 @@ const Pricing = () => {
       <h1 class={"section-h1"}>Ile płacę? 💲</h1>
       <ScrollAnimation
         animateIn={"fadeInUp"}
-        offset={50}
+        offset={120}
         duration={0.4}
         animateOnce={true}
       >

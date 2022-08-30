@@ -20,14 +20,12 @@ const About = () => {
         </h1>
         <p class={"section-p"}>
           Ants Clean działa na terenie Szczecina i wykonuje wszelkiego rodzaju
-          prace ogrodowe. Aby zobaczyć rezultaty naszych prac zapraszamy na{" "}
+          prace ogrodowe.
+          <br /> Aby zobaczyć rezultaty naszych prac zapraszamy na{" "}
           <a href="https://instagram.com/ants.clean" target={"blank"}>
             Instagrama
           </a>
-          . Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, amet
-          eaque et fugiat inventore maiores officia quidem repellat tenetur
-          voluptatibus. Alias amet ipsa minima porro quam, reiciendis rem
-          voluptas voluptatibus?
+          .
         </p>
         <ScrollAnimation
           animateIn={"fadeInUp"}

@@ -15,7 +15,7 @@ const Contact = () => {
         <h1 class={"section-h1"}>Zadzwoń do nas</h1>
         <ScrollAnimation
           animateIn={"fadeInUp"}
-          offset={50}
+          offset={120}
           duration={0.4}
           animateOnce={true}
         >
