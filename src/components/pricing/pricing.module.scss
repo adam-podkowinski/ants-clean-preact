@@ -16,6 +16,18 @@
     border-radius: 2rem;
   }
 
+  .center {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .divider {
+    width: 100%;
+    background-color: $primary;
+    height: 2px;
+  }
+
   .discount {
     font-weight: 500;
   }

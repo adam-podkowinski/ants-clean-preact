@@ -39,6 +39,7 @@ html {
 a {
   text-decoration: underline;
   color: $accent;
+  transition: color .3s;
 }
 
 .container {

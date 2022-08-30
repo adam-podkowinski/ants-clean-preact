@@ -30,7 +30,7 @@ const Navigation = () => {
         </a>
       </li>
       <li>
-        <a href="#" onclick={closeMenu}>
+        <a href={"#contact"} onclick={closeMenu}>
           Kontakt
         </a>
       </li>
