@@ -1,6 +1,11 @@
 import classes from "./about.module.scss";
 import ScrollAnimation from "react-animate-on-scroll";
-import { FaCalendarWeek, FaCheck, FaShieldAlt, FaStar } from "react-icons/fa";
+import {
+  FaCalendarWeek,
+  FaCheck,
+  FaShieldAlt,
+  FaPercent,
+} from "react-icons/fa";
 
 const About = () => {
   return (
@@ -19,13 +24,21 @@ const About = () => {
           Dowiedz się więcej!
         </h1>
         <p class={"section-p"}>
-          Ants Clean działa na terenie Szczecina i wykonuje wszelkiego rodzaju
-          prace ogrodowe.
-          <br /> Aby zobaczyć rezultaty naszych prac zapraszamy na{" "}
-          <a href="https://instagram.com/ants.clean" target={"blank"}>
-            Instagrama
-          </a>
-          .
+          <p>
+            Ants Clean działa na terenie Szczecina i wykonuje wszelkiego rodzaju
+            prace ogrodowe.
+          </p>
+          <p>
+            Oferujemy pielęgnację ogrodu, projektowanie przestrzeni ogrodowej i
+            sprzedaż samorobionych dekoracji.
+          </p>
+          <p>
+            Aby zobaczyć rezultaty naszych prac zapraszamy na{" "}
+            <a href="https://instagram.com/ants.clean" target={"blank"}>
+              Instagrama
+            </a>
+            .
+          </p>
         </p>
         <ScrollAnimation
           animateIn={"fadeInUp"}
@@ -41,9 +54,9 @@ const About = () => {
               </p>
             </div>
             <div class={classes.featureBox}>
-              <FaStar class={classes.featureIcon} />
+              <FaPercent class={classes.featureIcon} />
               <p>
-                <span>Dokładna</span> praca
+                Zniżka <span>10%</span> dla seniorów
               </p>
             </div>
             <div class={classes.featureBox}>

@@ -51,6 +51,11 @@ a {
     line-height: 1.7;
     font-size: 1.4rem;
     margin-bottom: 3rem;
+    @media (max-width: 1455px) {
+      display: flex;
+      flex-flow: column;
+      gap: 1.4rem;
+    }
   }
 
   @media(max-width: 1500px) {

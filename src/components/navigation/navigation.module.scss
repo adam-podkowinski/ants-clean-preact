@@ -4,10 +4,28 @@
   position: fixed;
   top: 0;
   background: $primaryShade;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .logo, .mobileSwitch {
+    animation: fadeIn .4s;
+  }
 }
 
 .navWrapper {
   height: $navHeight;
+}
+
+.logo {
+  display: flex;
+  gap: 1.2rem;
 }
 
 .mobileSwitch {
@@ -32,12 +50,21 @@
   height: $navHeight;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 5rem;
+  padding-inline: $sectionPaddingInline;
   color: #fff;
   font-weight: 500;
   font-size: 1.5rem;
-  transition: background-color .3s;
+  transition: background-color .4s;
   z-index: 1;
+
+  // TODO: move paddings to variables in vars.scss
+  @media(max-width: 1500px) {
+    padding-inline: 10rem;
+  }
+
+  @media(max-width: 1072px) {
+    padding-inline: 4rem;
+  }
 
   @media(max-width: $mobile) {
     padding-inline: $sectionPaddingInlineSmall;
@@ -60,7 +87,7 @@
     justify-content: center;
 
     img {
-      width: calc(#{$navHeight} - 1vh);
+      width: calc(#{$navHeight} - 2.5vh);
     }
 
     &:hover, &:active {

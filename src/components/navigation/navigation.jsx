@@ -7,7 +7,7 @@ const Navigation = () => {
   const [open, setOpen] = useState(false);
   const handleScroll = () => {
     const offset = window.scrollY;
-    setScrolled(offset > window.innerHeight);
+    setScrolled(offset > window.innerHeight / 1.5);
   };
   const closeMenu = () => setOpen(false);
 
@@ -48,8 +48,8 @@ const Navigation = () => {
   return (
     <div class={classes.navWrapper}>
       <nav class={navClasses}>
-        <a href={"#"}>
-          <img src="logo.jpg" alt="Logo Ants Clean" />
+        <a href={"#"} class={classes.logo}>
+          <img src="logo.jpg" alt="Logo Ants Clean" /> Ants Clean
         </a>
         {navItems}
         {mobileMenu}
