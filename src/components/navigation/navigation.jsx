@@ -49,7 +49,8 @@ const Navigation = () => {
     <div class={classes.navWrapper}>
       <nav class={navClasses}>
         <a href={"#"} class={classes.logo}>
-          <img src="logo.jpg" alt="Logo Ants Clean" /> Ants Clean
+          <img src="logo.jpg" alt="Logo Ants Clean" />{" "}
+          <strong>Ants Clean</strong>
         </a>
         {navItems}
         {mobileMenu}

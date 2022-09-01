@@ -4,6 +4,10 @@
   background-color: $primaryShade;
   color: #fff;
 
+  strong {
+    font-weight: 500;
+  }
+
   a:hover, a:active {
     color: $primaryTinter;
   }
@@ -50,13 +54,17 @@
   }
 }
 
+.about-container {
+  padding-top: calc(#{$sectionPaddingBlockSmall} - .5rem) !important;
+}
+
 .images {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding-top: $sectionPaddingBlock;
-  padding-inline: 4vw;
+  padding-inline: 4vh;
 
   @media (max-width: 1000px) {
     padding-top: $sectionPaddingBlockSmall;
@@ -65,13 +73,18 @@
 }
 
 .image {
-  background: $primaryTint;
   width: 100%;
-  height: 0;
-  padding-bottom: 70%;
+  height: 15rem;
+  filter: saturate(.9) opacity(.9);
+
+  @media(max-width: $mobile) {
+    height: 10rem;
+  }
+
+  box-shadow: 0 1rem 20px -5px transparentize($primary, .8);
+  object-fit: cover;
   border-radius: 3rem;
   @media(max-width: 1000px) {
-    padding-bottom: 40%;
     border-radius: 1.5rem;
   }
 }

@@ -12,21 +12,38 @@ const About = () => {
     <section id={"about"} class={classes.about}>
       <ScrollAnimation animateIn={"fadeInUp"} duration={0.6} animateOnce={true}>
         <div class={classes.images}>
-          <div class={classes.image} />
-          <div class={classes.image} />
-          <div class={classes.image} />
-          <div class={classes.image} />
+          <img
+            src="garden1.jpg"
+            alt="Ogród w Szczecinie"
+            class={classes.image}
+          />
+          <img
+            src="garden2.jpg"
+            alt="Ogród w Szczecinie"
+            class={classes.image}
+          />
+          <img
+            src="garden3.jpg"
+            alt="Ogród w Szczecinie"
+            class={classes.image}
+          />
+          <img
+            src="garden4.jpg"
+            alt="Ogród w Szczecinie"
+            class={classes.image}
+          />
         </div>
       </ScrollAnimation>
-      <div class={"container"}>
+      <div class={`container ${classes.aboutContainer}`}>
         <h3 class={`section-h3 ${classes.aboutHeader}`}>O nas</h3>
         <h1 class={`section-h1 ${classes.aboutHeaderBig}`}>
           Dowiedz się więcej!
         </h1>
         <p class={"section-p"}>
           <p>
-            Ants Clean działa na terenie Szczecina i wykonuje wszelkiego rodzaju
-            prace ogrodowe.
+            <strong>Ants Clean</strong> działa na terenie{" "}
+            <strong>Szczecina</strong> i wykonuje wszelkiego rodzaju prace
+            ogrodowe.
           </p>
           <p>
             Oferujemy pielęgnację ogrodu, projektowanie przestrzeni ogrodowej i
@@ -43,7 +60,7 @@ const About = () => {
         <ScrollAnimation
           animateIn={"fadeInUp"}
           duration={0.6}
-          offset={75}
+          offset={85}
           animateOnce={true}
         >
           <div class={classes.features}>

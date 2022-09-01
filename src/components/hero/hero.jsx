@@ -6,7 +6,10 @@ const Hero = () => {
     <section class={classes.hero}>
       <div class={classes.center}>
         <h1>ANTS CLEAN</h1>
-        <p>Twój ogród - nasza pasja. 🌱 🏡</p>
+        <p>
+          Twój <strong>ogród</strong> &mdash; nasza <strong>pasja</strong>.
+          🌱&nbsp;🏡
+        </p>
         <div class={classes.buttonBox}>
           <a href={"tel:+48534103127"} class={classes.mainButton}>
             <CgPhone /> Zadzwoń

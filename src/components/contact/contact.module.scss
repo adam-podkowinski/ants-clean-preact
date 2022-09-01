@@ -26,6 +26,16 @@
     }
   }
 
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+
+    @media(max-width: 1262px) {
+      grid-template-columns: 1fr;
+    }
+  }
   a {
     text-decoration: none;
   }

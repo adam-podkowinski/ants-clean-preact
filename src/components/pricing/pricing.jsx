@@ -16,7 +16,17 @@ const Pricing = () => {
           <div class={classes.card}>
             <h2 class={classes.subheading}>Wszystkie prace w cenie:</h2>
             <div class={classes.normalPrice}>
-              <span>24 zł/h</span> <p>+ stałe </p> <span>15 zł</span>
+              <div class={classes.divider} />
+              <div>
+                <h3 class={classes.hour}>1h pracy: </h3>
+                <span>39 zł</span>
+              </div>
+              <div class={classes.divider} />
+              <div>
+                <h3 class={classes.hour}>Kolejne godziny: </h3>
+                <span>24 zł</span>
+              </div>
+              <div class={classes.divider} />
             </div>
             <h3 class={classes.boldText}>lub na indywidualną wycenę.</h3>
           </div>
