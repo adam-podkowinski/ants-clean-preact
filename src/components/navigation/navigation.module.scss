@@ -1,5 +1,7 @@
 @import "src/vars.scss";
 
+$hamburgerNavDevice: 860px;
+
 .scrolled {
   position: fixed;
   top: 0;
@@ -39,7 +41,7 @@
   text-align: center;
   align-items: center;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $hamburgerNavDevice) {
     display: flex;
   }
 }
@@ -101,7 +103,7 @@
     list-style: none;
     display: flex;
     gap: 2.5rem;
-    @media(max-width: $mobile) {
+    @media(max-width: $hamburgerNavDevice) {
       a {
         font-size: 2rem;
       }
@@ -126,7 +128,7 @@
   }
 
   .open {
-    @media(max-width: $mobile) {
+    @media(max-width: $hamburgerNavDevice) {
       opacity: 100%;
       visibility: visible;
       transform: translateX(0);

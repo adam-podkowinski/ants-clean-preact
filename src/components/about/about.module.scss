@@ -1,5 +1,8 @@
 @import "src/vars";
 
+$imageGap: 3.5rem;
+$smallImageGap: 1rem;
+
 .about {
   background-color: $primaryShade;
   color: #fff;
@@ -56,36 +59,61 @@
 
 .about-container {
   padding-top: calc(#{$sectionPaddingBlockSmall} - .5rem) !important;
+  @media(max-width: $mobile) {
+    padding-top: calc(#{$sectionPaddingBlockSmall} - 1rem) !important;
+  }
+}
+
+.imagesContainer {
+  position: relative;
+  overflow-x: hidden;
 }
 
 .images {
-  display: grid;
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  animation: slide 49s linear infinite;
   width: 100%;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding-top: $sectionPaddingBlock;
-  padding-inline: 4vh;
+  gap: $imageGap;
+  padding-top: calc(#{$sectionPaddingBlockSmall} / 1.5);
+  padding-left: $imageGap;
 
   @media (max-width: 1000px) {
-    padding-top: $sectionPaddingBlockSmall;
-    grid-template-columns: repeat(2, 1fr);
+    padding-top: calc(#{$sectionPaddingBlockSmall} / 3);
+    gap: $smallImageGap;
+    padding-left: $smallImageGap;
   }
+}
+
+.images-2 {
+  position: absolute;
+  top: 0;
+  right: -100%;
 }
 
 .image {
   width: 100%;
+  filter: opacity(.6);
   height: 15rem;
-  filter: saturate(.9) opacity(.9);
 
   @media(max-width: $mobile) {
-    height: 10rem;
+    height: 8rem;
   }
 
-  box-shadow: 0 1rem 20px -5px transparentize($primary, .8);
   object-fit: cover;
   border-radius: 3rem;
   @media(max-width: 1000px) {
-    border-radius: 1.5rem;
+    border-radius: 1.2rem;
   }
 }
 

@@ -21,34 +21,40 @@ const Contact = () => {
         >
           <div class={classes.grid}>
             <a href="tel:+48534103127" class={classes.card}>
-              <p>
-                <AiFillPhone />
-                Telefon: <span>+48 534103127</span>
-              </p>
+              <div class={classes.contactName}>
+                <AiFillPhone class={classes.contactIcon} />
+                <p class={classes.contactText}>Telefon:</p>
+              </div>
+              <p class={classes.contactContent}>+48 534103127</p>
             </a>
             <a href={"mailto:ants.clean@gmail.com"} class={classes.card}>
-              <p>
-                <AiFillMail />
-                E-mail: <span>ants.clean@gmail.com</span>
-              </p>
+              <div class={classes.contactName}>
+                <AiFillMail class={classes.contactIcon} />
+                <p class={classes.contactText}>E-mail:</p>
+              </div>
+              <p class={classes.contactContent}>ants.clean@gmail.com</p>
             </a>
             <a
               href={"https://instagram.com/ants.clean"}
               target={"blank"}
               class={classes.card}
             >
-              <p>
-                <AiFillInstagram /> Instagram: <span>ants.clean</span>
-              </p>
+              <div class={classes.contactName}>
+                <AiFillInstagram class={classes.contactIcon} />{" "}
+                <p class={classes.contactText}>Instagram:</p>
+              </div>
+              <p class={classes.contactContent}>ants.clean</p>
             </a>
             <a
               href={"https://www.facebook.com/ants.cleean.9"}
               class={classes.card}
               target={"blank"}
             >
-              <p>
-                <AiFillFacebook /> Facebook: <span>Ants Cleean</span>
-              </p>
+              <div class={classes.contactName}>
+                <AiFillFacebook class={classes.contactIcon} />
+                <p class={classes.contactText}>Facebook:</p>
+              </div>
+              <p class={classes.contactContent}>Ants Cleean</p>
             </a>
           </div>
         </ScrollAnimation>

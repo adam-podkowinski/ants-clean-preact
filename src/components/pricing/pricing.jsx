@@ -19,7 +19,7 @@ const Pricing = () => {
               <div class={classes.divider} />
               <div>
                 <h3 class={classes.hour}>1h pracy: </h3>
-                <span>39 zł</span>
+                <span>24 zł + 15 zł</span>
               </div>
               <div class={classes.divider} />
               <div>
