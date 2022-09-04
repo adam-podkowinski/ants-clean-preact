@@ -1,6 +1,6 @@
 @import "src/vars.scss";
 
-$hamburgerNavDevice: 860px;
+$hamburgerNavDevice: 950px;
 
 .scrolled {
   position: fixed;
@@ -64,7 +64,7 @@ $hamburgerNavDevice: 860px;
     padding-inline: 10rem;
   }
 
-  @media(max-width: 1072px) {
+  @media(max-width: 1100px) {
     padding-inline: 4rem;
   }
 

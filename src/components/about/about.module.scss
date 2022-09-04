@@ -6,6 +6,7 @@ $smallImageGap: 1rem;
 .about {
   background-color: $primaryShade;
   color: #fff;
+  overflow: hidden;
 
   strong {
     font-weight: 500;
@@ -67,6 +68,10 @@ $smallImageGap: 1rem;
 .imagesContainer {
   position: relative;
   overflow-x: hidden;
+  width: 200%;
+  @media(max-width: $mobile) {
+    width: 350%;
+  }
 }
 
 .images {
@@ -80,10 +85,13 @@ $smallImageGap: 1rem;
     }
   }
 
-  animation: slide 49s linear infinite;
+  animation: slide 15s linear infinite;
+  @media(min-width: $mobile) {
+    animation-duration: 25s;
+  }
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: $imageGap;
   padding-top: calc(#{$sectionPaddingBlockSmall} / 1.5);
   padding-left: $imageGap;
@@ -107,7 +115,7 @@ $smallImageGap: 1rem;
   height: 15rem;
 
   @media(max-width: $mobile) {
-    height: 8rem;
+    height: 10rem;
   }
 
   object-fit: cover;

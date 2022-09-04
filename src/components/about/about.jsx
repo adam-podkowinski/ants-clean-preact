@@ -8,54 +8,24 @@ import {
 } from "react-icons/fa";
 
 const About = () => {
+  const images = (
+    <>
+      <img src="garden1.jpg" alt="Ogród w Szczecinie" class={classes.image} />
+      <img src="garden2.jpg" alt="Ogród w Szczecinie" class={classes.image} />
+      <img src="garden3.jpg" alt="Ogród w Szczecinie" class={classes.image} />
+      <img src="garden4.jpg" alt="Ogród w Szczecinie" class={classes.image} />
+      <img src="garden5.jpg" alt="Ogród w Szczecinie" class={classes.image} />
+      <img src="garden6.jpg" alt="Ogród w Szczecinie" class={classes.image} />
+      <img src="garden7.jpg" alt="Ogród w Szczecinie" class={classes.image} />
+      <img src="garden8.jpg" alt="Ogród w Szczecinie" class={classes.image} />
+    </>
+  );
   return (
     <section id={"about"} class={classes.about}>
       <ScrollAnimation animateIn={"fadeInUp"} duration={0.6} animateOnce={true}>
         <div class={classes.imagesContainer}>
-          <div class={classes.images}>
-            <img
-              src="garden1.jpg"
-              alt="Ogród w Szczecinie"
-              class={classes.image}
-            />
-            <img
-              src="garden2.jpg"
-              alt="Ogród w Szczecinie"
-              class={classes.image}
-            />
-            <img
-              src="garden3.jpg"
-              alt="Ogród w Szczecinie"
-              class={classes.image}
-            />
-            <img
-              src="garden4.jpg"
-              alt="Ogród w Szczecinie"
-              class={classes.image}
-            />
-          </div>
-          <div class={`${classes.images} ${classes.images2}`}>
-            <img
-              src="garden1.jpg"
-              alt="Ogród w Szczecinie"
-              class={classes.image}
-            />
-            <img
-              src="garden2.jpg"
-              alt="Ogród w Szczecinie"
-              class={classes.image}
-            />
-            <img
-              src="garden3.jpg"
-              alt="Ogród w Szczecinie"
-              class={classes.image}
-            />
-            <img
-              src="garden4.jpg"
-              alt="Ogród w Szczecinie"
-              class={classes.image}
-            />
-          </div>
+          <div class={classes.images}>{images}</div>
+          <div class={`${classes.images} ${classes.images2}`}>{images}</div>
         </div>
       </ScrollAnimation>
       <div class={`container ${classes.aboutContainer}`}>
