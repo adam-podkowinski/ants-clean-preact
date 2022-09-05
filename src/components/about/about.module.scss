@@ -85,9 +85,9 @@ $smallImageGap: 1rem;
     }
   }
 
-  animation: slide 15s linear infinite;
+  animation: slide 25s linear infinite;
   @media(min-width: $mobile) {
-    animation-duration: 25s;
+    animation-duration: 35s;
   }
   width: 100%;
   display: grid;
