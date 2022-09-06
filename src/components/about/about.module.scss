@@ -103,6 +103,43 @@ $smallImageGap: 1rem;
   }
 }
 
+.offerList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media(max-width: 897px) {
+    grid-template-columns: 1fr;
+  }
+
+  li {
+    display: flex;
+
+    &:before {
+      content: '🍀';
+      padding-right: .5rem;
+    }
+
+    font-size: 1.5rem;
+
+    @media(max-width: 1225px) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.25rem;
+    }
+
+    padding: 1rem;
+
+    border: 2px solid $primary;
+
+    &:first-of-type {
+      border-top: 2px solid $primary;
+    }
+  }
+}
+
 .images-2 {
   position: absolute;
   top: 0;

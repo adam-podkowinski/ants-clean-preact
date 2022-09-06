@@ -21,71 +21,113 @@ const About = () => {
     </>
   );
   return (
-    <section id={"about"} class={classes.about}>
-      <ScrollAnimation animateIn={"fadeInUp"} duration={0.6} animateOnce={true}>
-        <div class={classes.imagesContainer}>
-          <div class={classes.images}>{images}</div>
-          <div class={`${classes.images} ${classes.images2}`}>{images}</div>
-        </div>
-      </ScrollAnimation>
-      <div class={`container ${classes.aboutContainer}`}>
-        <h3 class={`section-h3 ${classes.aboutHeader}`}>O nas</h3>
-        <h1 class={`section-h1 ${classes.aboutHeaderBig}`}>
-          Dowiedz się więcej!
-        </h1>
-        <p class={"section-p"}>
-          <p>
-            <strong>Ants Clean</strong> działa na terenie{" "}
-            <strong>Szczecina</strong> i wykonuje wszelkiego rodzaju prace
-            ogrodowe.
-          </p>
-          <p>
-            Oferujemy pielęgnację ogrodu, projektowanie przestrzeni ogrodowej i
-            sprzedaż samorobionych dekoracji.
-          </p>
-          <p>
-            Aby zobaczyć rezultaty naszych prac zapraszamy na{" "}
-            <a href="https://instagram.com/ants.clean" target={"blank"}>
-              Instagrama
-            </a>
-            .
-          </p>
-        </p>
+    <>
+      <section id={"about"} class={classes.about}>
         <ScrollAnimation
           animateIn={"fadeInUp"}
           duration={0.6}
-          offset={85}
           animateOnce={true}
         >
-          <div class={classes.features}>
-            <div class={classes.featureBox}>
-              <FaCheck class={classes.featureIcon} />
-              <p>
-                <span>+500</span> wykonanych zleceń
-              </p>
-            </div>
-            <div class={classes.featureBox}>
-              <FaPercent class={classes.featureIcon} />
-              <p>
-                Zniżka <span>10%</span> dla seniorów
-              </p>
-            </div>
-            <div class={classes.featureBox}>
-              <FaCalendarWeek class={classes.featureIcon} />
-              <p>
-                Działamy <span>7 dni</span> w tygodniu
-              </p>
-            </div>
-            <div class={classes.featureBox}>
-              <FaShieldAlt class={classes.featureIcon} />
-              <p>
-                <span>100%</span> higieny i ostrożności
-              </p>
-            </div>
+          <div class={classes.imagesContainer}>
+            <div class={classes.images}>{images}</div>
+            <div class={`${classes.images} ${classes.images2}`}>{images}</div>
           </div>
         </ScrollAnimation>
-      </div>
-    </section>
+        <div class={`container ${classes.aboutContainer}`}>
+          <h3 class={`section-h3 ${classes.aboutHeader}`}>O nas</h3>
+          <h1 class={`section-h1 ${classes.aboutHeaderBig}`}>
+            Dowiedz się więcej!
+          </h1>
+          <p class={"section-p"}>
+            <p>
+              <strong>Ants Clean</strong> działa na terenie{" "}
+              <strong>Szczecina</strong> i wykonuje wszelkiego rodzaju prace
+              ogrodowe.
+            </p>
+            <p>
+              Oferujemy pielęgnację ogrodu, projektowanie przestrzeni ogrodowej
+              i sprzedaż samorobionych dekoracji.
+            </p>
+            <p>
+              Aby zobaczyć rezultaty naszych prac zapraszamy na{" "}
+              <a href="https://instagram.com/ants.clean" target={"blank"}>
+                Instagrama
+              </a>
+              .
+            </p>
+          </p>
+          <ScrollAnimation
+            animateIn={"fadeInUp"}
+            duration={0.6}
+            offset={85}
+            animateOnce={true}
+          >
+            <div class={classes.features}>
+              <div class={classes.featureBox}>
+                <FaCheck class={classes.featureIcon} />
+                <p>
+                  <span>+500</span> wykonanych zleceń
+                </p>
+              </div>
+              <div class={classes.featureBox}>
+                <FaPercent class={classes.featureIcon} />
+                <p>
+                  Zniżka <span>10%</span> dla seniorów
+                </p>
+              </div>
+              <div class={classes.featureBox}>
+                <FaCalendarWeek class={classes.featureIcon} />
+                <p>
+                  Działamy <span>7 dni</span> w tygodniu
+                </p>
+              </div>
+              <div class={classes.featureBox}>
+                <FaShieldAlt class={classes.featureIcon} />
+                <p>
+                  <span>100%</span> higieny i ostrożności
+                </p>
+              </div>
+            </div>
+          </ScrollAnimation>
+          <div id={"offert"} class={classes.aboutContainer}>
+            <h2 class={"section-h2"}>Co oferujemy?</h2>
+            <p class={"section-p"}>
+              <div>
+                Poniżej znajduje się lista z przykładowymi pracami, które
+                oferuje <strong>Ants&nbsp;Clean</strong>:
+              </div>
+            </p>
+            <ScrollAnimation
+              animateIn={"fadeInUp"}
+              duration={0.6}
+              offset={85}
+              animateOnce={true}
+            >
+              <ul class={classes.offerList}>
+                <li>Wertykulacja</li>
+                <li>Areacja</li>
+                <li>Dosiewki i piaskowanie</li>
+                <li>Zakładanie trawnika z siewu</li>
+                <li>Sadzenie roślin</li>
+                <li>Przycinanie żywopłotów</li>
+                <li>Formowanie krzewów</li>
+                <li>Pielenie</li>
+                <li>Czyszcenie kostki brukowe</li>
+                <li>Koszenie</li>
+                <li>Wykaszanie chaszczy</li>
+                <li>Opryski roślin</li>
+                <li>Wysypywanie kory</li>
+                <li>Rozkładanie włókniny</li>
+                <li>Grabienie liści</li>
+                <li>Zabezpieczanie roślin na zimę</li>
+                <li>Projektowanie i wykonywanie przestrzeni ogrodowej</li>
+                <li>Sprzedaż własnoręcznie robionych dekoracji ogrodowych</li>
+              </ul>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

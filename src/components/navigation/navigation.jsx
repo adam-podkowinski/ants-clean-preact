@@ -25,7 +25,7 @@ const Navigation = () => {
         </a>
       </li>
       <li>
-        <a href={"#about"} onclick={closeMenu}>
+        <a href={"#offert"} onclick={closeMenu}>
           Oferta
         </a>
       </li>
