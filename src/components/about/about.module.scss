@@ -2,6 +2,7 @@
 
 $imageGap: 3.5rem;
 $smallImageGap: 1rem;
+$listBorderRadius: 1.5rem;
 
 .about {
   background-color: $primaryShade;
@@ -110,7 +111,35 @@ $smallImageGap: 1rem;
 
   @media(max-width: 897px) {
     grid-template-columns: 1fr;
+
+    li:first-child {
+      border-top-left-radius: $listBorderRadius;
+      border-top-right-radius: $listBorderRadius;
+    }
+
+    li:last-child {
+      border-bottom-left-radius: $listBorderRadius;
+      border-bottom-right-radius: $listBorderRadius;
+    }
   }
+
+  @media(min-width: 898px) {
+    li:first-child {
+      border-top-left-radius: $listBorderRadius;
+    }
+    li:nth-child(2) {
+      border-top-right-radius: $listBorderRadius;
+    }
+
+    li:last-child {
+      border-bottom-right-radius: $listBorderRadius;
+    }
+
+    li:nth-last-child(2) {
+      border-bottom-left-radius: $listBorderRadius;
+    }
+  }
+
 
   li {
     display: flex;
@@ -132,10 +161,10 @@ $smallImageGap: 1rem;
 
     padding: 1rem;
 
-    border: 2px solid $primary;
+    border: 2px solid $primaryTint;
 
     &:first-of-type {
-      border-top: 2px solid $primary;
+      border-top: 2px solid $primaryTint;
     }
   }
 }
