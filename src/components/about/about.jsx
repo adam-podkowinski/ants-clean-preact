@@ -104,24 +104,64 @@ const About = () => {
               animateOnce={true}
             >
               <ul class={classes.offerList}>
-                <li>Wertykulacja</li>
-                <li>Areacja</li>
-                <li>Dosiewki i piaskowanie</li>
-                <li>Zakładanie trawnika z siewu</li>
-                <li>Sadzenie roślin</li>
-                <li>Przycinanie żywopłotów</li>
-                <li>Formowanie krzewów</li>
-                <li>Pielenie</li>
-                <li>Czyszcenie kostki brukowe</li>
-                <li>Koszenie</li>
-                <li>Wykaszanie chaszczy</li>
-                <li>Opryski roślin</li>
-                <li>Wysypywanie kory</li>
-                <li>Rozkładanie włókniny</li>
-                <li>Grabienie liści</li>
-                <li>Zabezpieczanie roślin na zimę</li>
-                <li>Projektowanie i wykonywanie przestrzeni ogrodowej</li>
-                <li>Sprzedaż własnoręcznie robionych dekoracji ogrodowych</li>
+                <li>
+                  <strong>Wertykulacja</strong>
+                </li>
+                <li>
+                  <strong>Areacja</strong>
+                </li>
+                <li>
+                  <strong>Dosiewki i piaskowanie</strong>
+                </li>
+                <li>
+                  <strong>Zakładanie trawnika z siewu</strong>
+                </li>
+                <li>
+                  <strong>Sadzenie roślin</strong>
+                </li>
+                <li>
+                  <strong>Przycinanie żywopłotów</strong>
+                </li>
+                <li>
+                  <strong>Formowanie krzewów</strong>
+                </li>
+                <li>
+                  <strong>Pielenie</strong>
+                </li>
+                <li>
+                  <strong>Czyszcenie kostki brukowe</strong>
+                </li>
+                <li>
+                  <strong>Koszenie</strong>
+                </li>
+                <li>
+                  <strong>Wykaszanie chaszczy</strong>
+                </li>
+                <li>
+                  <strong>Opryski roślin</strong>
+                </li>
+                <li>
+                  <strong>Wysypywanie kory</strong>
+                </li>
+                <li>
+                  <strong>Rozkładanie włókniny</strong>
+                </li>
+                <li>
+                  <strong>Grabienie liści</strong>
+                </li>
+                <li>
+                  <strong>Zabezpieczanie roślin na zimę</strong>
+                </li>
+                <li>
+                  <strong>
+                    Projektowanie i wykonywanie przestrzeni ogrodowej
+                  </strong>
+                </li>
+                <li>
+                  <strong>
+                    Sprzedaż własnoręcznie robionych dekoracji ogrodowych
+                  </strong>
+                </li>
               </ul>
             </ScrollAnimation>
           </div>
