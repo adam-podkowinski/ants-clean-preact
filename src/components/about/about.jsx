@@ -129,7 +129,7 @@ const About = () => {
                   <strong>Pielenie</strong>
                 </li>
                 <li>
-                  <strong>Czyszcenie kostki brukowe</strong>
+                  <strong>Czyszczenie kostki brukowej</strong>
                 </li>
                 <li>
                   <strong>Koszenie</strong>

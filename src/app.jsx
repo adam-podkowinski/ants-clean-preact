@@ -6,6 +6,12 @@ import Pricing from "@/components/pricing/pricing";
 import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
 
+function app() {
+  return <div>
+    siema;
+  </div>
+}
+
 export function App() {
   return (
     <div class={classes.app}>
