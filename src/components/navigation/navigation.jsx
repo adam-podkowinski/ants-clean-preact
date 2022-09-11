@@ -54,7 +54,7 @@ const Navigation = () => {
     <div class={classes.navWrapper}>
       <nav class={navClasses}>
         <a href={"#"} class={classes.logo}>
-          <img src="logo.jpg" alt="Logo Ants Clean" />{" "}
+          <img src="logo2.jpg" alt="Logo Ants Clean" />{" "}
           <strong>Ants Clean</strong>
         </a>
         {navItems}

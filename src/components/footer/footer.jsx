@@ -11,7 +11,7 @@ const Footer = () => {
           Instagram: ants.clean
         </a>
         <div>
-          CEO:{" "}
+          Właściciel:{" "}
           <a
             href={"https://www.instagram.com/aleksander_pawlowski_"}
             target={"blank"}
