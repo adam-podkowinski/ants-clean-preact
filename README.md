@@ -1,4 +1,4 @@
-# A website for an Ants Clean company.
+# A responsive website for the Ants Clean company.
 
 ## Website link: [antsclean.pl](https://antsclean.pl)
 
