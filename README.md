@@ -1,5 +1,5 @@
-#A website for an Ants Clean company.
+# A website for an Ants Clean company.
 
-##Website link: [antsclean.pl](https://antsclean.pl)
+## Website link: [antsclean.pl](https://antsclean.pl)
 
 Created with Preact and Vite.
