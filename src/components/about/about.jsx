@@ -39,9 +39,8 @@ const About = () => {
                         Dowiedz się więcej!
                     </h1>
                     <p class={"section-p"}>
-                        <p>
-                            W Pawlowsky and Garden główną naszą misją jest zmiana twojego ogrodu w wymarzoną przestrzeń do relaxu i spędzania wspólnego czasu z rodziną. W naszym zespole młode osoby podchodzą z niewiarygodną pasją do przemiany twojego ogrodu a każde cięcie wykonywane jest z największą precyzją. Jeśli chcesz mieć piękny i zadbany ogród a nie masz czasu na jego pielęgnację skontaktuj się z nami.
-                        </p>
+                        <p>W Pawlowsky and Garden główną naszą misją jest zmiana twojego ogrodu w wymarzoną przestrzeń do relaksu i spędzania wspólnego czasu z rodziną. W naszym zespole młode osoby podchodzą z niewiarygodną pasją do przemiany twojego ogrodu, a każde cięcie wykonywane jest z największą precyzją. Jeśli chcesz mieć piękny i zadbany ogród, a nie masz czasu na jego pielęgnację, skontaktuj się z nami.
+</p>
                     </p>
                     <ScrollAnimation
                         animateIn={"fadeInUp"}
