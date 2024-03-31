@@ -1,114 +1,124 @@
 @import "src/vars.scss";
 
 .hero {
-  width: 100%;
-  height: calc(100vh - #{$navHeight});
-  justify-content: center;
-  position: relative;
-  color: #fff;
+    width: 100%;
+    height: calc(100vh - #{$navHeight});
+    justify-content: center;
+    position: relative;
+    color: #fff;
 
-  p, button, h1 {
-    @keyframes slideIn {
-      from {
-        transform: translateY(40%);
-      }
+    p,
+    button,
+    h1 {
+        @keyframes slideIn {
+            from {
+                transform: translateY(40%);
+            }
 
-      to {
-        transform: none;
-      }
+            to {
+                transform: none;
+            }
+        }
+
+        animation: slideIn .3s;
     }
-
-    animation: slideIn .3s;
-  }
 }
 
 .center {
-  position: absolute;
-  top: 40vh;
-  width: 100%;
-  padding: 2.5rem;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  text-align: center;
+    position: absolute;
+    top: 40vh;
+    width: 100%;
+    padding: 2.5rem;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
 
-  strong {
-    font-weight: 500;
-  }
-
-  h1 {
-    font-size: 5rem;
-    margin-bottom: .8rem;
-    line-height: .95;
-    background: linear-gradient(to right, darken($primaryTinter, 10), darken($accent, 40));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  p {
-    font-size: 1.5rem;
-    letter-spacing: .5px;
-    line-height: 1.5;
-    margin-bottom: 3rem;
-  }
-
-  .buttonBox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    @media(max-width: $mobile) {
-      flex-flow: column;
-    }
-  }
-
-  .main-button {
-    box-shadow: 0 10px 30px -10px $primaryTint;
-    border: 3px solid $primary;
-
-    &:hover, &:active{
-      border-color: $primaryTint;
-    }
-  }
-
-  .secondary-button {
-    background-color: transparentize($primaryShade, .75);
-    color: #fff;
-    border: 3px solid $primaryTint;
-
-    &:hover {
-      background-color: $accent;
-      border-color: $accent;
-      color: $darkText;
-    }
-  }
-
-  a {
-    background: $primary;
-    border: none;
-    padding: 1.2rem 3rem;
-    border-radius: 2rem;
-    display: flex;
-    text-decoration: none;
-    color: $darkText;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color .3s, transform .25s ease-out, border-color .3s;
-    font-size: 1.3rem;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-
-    @media(max-width: $mobile) {
-      width: 100%;
+    strong {
+        font-weight: 500;
     }
 
-    &:hover, &:active {
-      background-color: $primaryTint;
-      transform: translateY(-8%);
+    h1 {
+        font-size: 5rem;
+        margin-bottom: .8rem;
+        line-height: .95;
+        background: linear-gradient(to right, darken($primaryTinter, 10), darken($accent, 40));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media(max-width: $mobile) {
+            font-size: 3rem;
+        }
     }
 
-    &:focus {
-      outline: none;
+    p {
+        font-size: 1.5rem;
+        letter-spacing: .5px;
+        line-height: 1.5;
+        margin-bottom: 3rem;
     }
-  }
+
+    .buttonBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        @media(max-width: $mobile) {
+            flex-flow: column;
+        }
+    }
+
+    .main-button {
+        box-shadow: 0 10px 30px -10px $primaryTint;
+        border: 3px solid $primary;
+
+        &:hover,
+        &:active {
+            border-color: $primaryTint;
+        }
+    }
+
+    .secondary-button {
+        background-color: transparentize($primaryShade, .75);
+        color: #fff;
+        border: 3px solid $primaryTint;
+
+        &:hover {
+            background-color: $accent;
+            border-color: $accent;
+            color: $darkText;
+        }
+    }
+
+    a {
+        background: $primary;
+        border: none;
+        padding: 1.2rem 3rem;
+        border-radius: 2rem;
+        display: flex;
+        text-decoration: none;
+        color: $darkText;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color .3s, transform .25s ease-out, border-color .3s;
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+
+        @media(max-width: $mobile) {
+            width: 100%;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $primaryTint;
+            transform: translateY(-8%);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
 }

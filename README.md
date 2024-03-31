@@ -1,6 +1,6 @@
-# A responsive website for the Ants Clean company.
+# A responsive website for the Pawlowsky & Garden company.
 
-## Website link: [antsclean.pl](https://antsclean.pl)
+## Website link: [pawlowskyandgarden.pl](https://pawlowskyandgarden.pl)
 
 Created with Preact and Vite.
 

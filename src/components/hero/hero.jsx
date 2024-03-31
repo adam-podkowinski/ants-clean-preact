@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section class={classes.hero}>
       <div class={classes.center}>
-        <h1>ANTS CLEAN</h1>
+        <h1>PAWLOWSKY &amp; GARDEN</h1>
         <p>
           Twój <strong>ogród</strong> &mdash; nasza <strong>pasja</strong>.
           🌱&nbsp;🏡

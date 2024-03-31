@@ -1,103 +1,113 @@
 @import "src/vars";
 
 .contact {
-  @media(max-width: $mobile) {
-    h1 {
-      font-size: 2.5rem;
-    }
-  }
-
-  div {
-    padding-top: 0;
-  }
-
-  font-size: 1.5rem;
-
-  .contact-content {
-    color: darken($primaryShadeLight, 5);
-    font-weight: 600;
-    transition: color .3s;
-  }
-
-  .contact-name {
-    display: flex;
-    align-items: center;
-    gap: .4rem;
-    justify-content: end;
-    font-weight: 500;
-    color: $primaryShade;
-
-    .contact-text {
-      transition: color .3s;
+    @media(max-width: $mobile) {
+        h1 {
+            font-size: 2.5rem;
+        }
     }
 
-    .contact-icon {
-      transition: color .3s;
-
-      &:hover {
-        color: $primaryTinter;
-      }
-    }
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-
-    @media(max-width: 1262px) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .card {
-    transition: background-color .3s, border-color .3s, transform .3s;
-
-    &:hover, &:active {
-      background: $primaryShade;
-      border-color: $primaryShade;
-      cursor: pointer;
-      transform: translateY(-5%);
-
-      .contact-content {
-        color: $accent;
-      }
-
-      .contact-name, .contact-icon, .contact-text {
-        color: $primaryTinter;
-      }
+    div {
+        padding-top: 0;
     }
 
-    @media(max-width: 550px) {
-      grid-template-columns: 1fr !important;
-      .contact-name {
-        align-self: center;
-        justify-self: center;
-      }
-      p {
-        flex-flow: column;
-      }
-      padding: 1rem 1rem;
+    font-size: 1.5rem;
+
+    .contact-content {
+        color: darken($primaryShadeLight, 5);
+        font-weight: 600;
+        transition: color .3s;
     }
 
-    display: flex;
-    @media (max-width: 550px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: .4rem;
+    .contact-name {
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+        justify-content: end;
+        font-weight: 500;
+        color: $primaryShade;
+
+        .contact-text {
+            transition: color .3s;
+        }
+
+        .contact-icon {
+            transition: color .3s;
+
+            &:hover {
+                color: $primaryTinter;
+            }
+        }
     }
-    align-items: center;
-    justify-content: center;
-    gap: .6rem;
-    border: 3px solid $primary;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    box-shadow: 0 20px 50px -20px rgba(61, 120, 61, .2);
-    text-align: center;
-    border-radius: 2rem;
-  }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+
+        @media(max-width: 1262px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .card {
+        transition: background-color .3s, border-color .3s, transform .3s;
+        display: flex;
+        flex-direction: column;
+
+        &:hover,
+        &:active {
+            background: $primaryShade;
+            border-color: $primaryShade;
+            cursor: pointer;
+            transform: translateY(-5%);
+
+            .contact-content {
+                color: $accent;
+            }
+
+            .contact-name,
+            .contact-icon,
+            .contact-text {
+                color: $primaryTinter;
+            }
+        }
+
+        @media(max-width: 550px) {
+            grid-template-columns: 1fr !important;
+
+            .contact-name {
+                align-self: center;
+                justify-self: center;
+            }
+
+            p {
+                flex-flow: column;
+            }
+
+            padding: 1rem 1rem;
+        }
+
+        display: flex;
+
+        @media (max-width: 550px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: .4rem;
+        }
+
+        align-items: center;
+        justify-content: center;
+        gap: .6rem;
+        border: 3px solid $primary;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        box-shadow: 0 20px 50px -20px rgba(61, 120, 61, .2);
+        text-align: center;
+        border-radius: 2rem;
+    }
 }

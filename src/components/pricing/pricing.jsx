@@ -14,21 +14,18 @@ const Pricing = () => {
       >
         <div class={classes.center}>
           <div class={classes.card}>
-            <h2 class={classes.subheading}>Wszystkie prace w cenie:</h2>
+            <h2 class={classes.subheading}>Umów się z nami na bezpłatną wycenę.</h2>
             <div class={classes.normalPrice}>
-              <div class={classes.divider} />
               <div>
-                <h3 class={classes.hour}>Pierwsza godzina pracy:</h3>
-                <span>24 zł + 15 zł</span>
+                <h3 class={classes.pricing}>Lub:</h3>
               </div>
               <div class={classes.divider} />
               <div>
-                <h3 class={classes.hour}>Kolejne godziny:</h3>
-                <span>24 zł</span>
+                <h3 class={classes.hour}>Stała stawka godzinowa</h3>
+                <span>24 zł + 30 zł za rozpoczęcie pracy</span>
               </div>
               <div class={classes.divider} />
             </div>
-            <h3 class={classes.boldText}>lub na indywidualną wycenę.</h3>
           </div>
           <h1 class={"section-h1"}>Zniżki ✂</h1>
           <div className={classes.card}>

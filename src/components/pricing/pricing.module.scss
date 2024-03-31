@@ -20,7 +20,7 @@
   }
 
   .hour {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 500;
   }
 
@@ -60,14 +60,13 @@
     display: flex;
     width: 100%;
     flex-flow: column;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
     justify-content: stretch;
     gap: 1rem;
 
     span {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
 
     p {
